@@ -1,0 +1,6 @@
+# Packages, IDE settings etc.
+.idea
+node_modules
+
+# Compiled files
+dist

@@ -1,0 +1,187 @@
+body {
+    background-color: rgb(54, 111, 224); /** Web-page font color */
+    font-family: 'Helvetica', Arial, monospace;
+    user-select: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+#app {
+    background: rgb(25, 156, 221);
+    border-radius: 30px;
+    padding: 20px;
+    width: 800px;
+    height: 620px;
+    position: fixed;
+}
+
+.footer {
+
+}
+
+/** #app > button, input {
+    font-weight: bold;
+} */
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.windowTitleLabel, .gameNameLabel, .userNameLabel {
+    position: relative;
+}
+
+.windowTitleLabel {
+    font-size: 300%;
+}
+
+.userNameLabel {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.gameStatusLabel {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 250%;
+    font-weight: lighter;
+}
+
+.gameNameLabel {
+    font-size: 700%;
+    font-weight: bold;
+}
+
+.centeredText {
+    text-align: center;
+}
+
+.bigButton, .smallButton {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.bigButton {
+    margin-top: 25px;
+    font-size: 20px;
+    width: 330px;
+    height: 60px;
+    font-weight: bold;
+}
+
+.smallButton {
+    margin-top: 15px;
+    font-size: 15px;
+    width: 220px;
+    height: 40px;
+}
+
+.inputField {
+    margin-top: 25px;
+    position: relative;
+    font-weight: bold;
+    font-size:20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 300px;
+    height: 40px;
+    border-radius: 30px;
+    cursor: text;
+}
+
+#fields {
+    margin-top: 25px;
+    position: relative;
+    overflow: auto;
+    width: 780px;
+    /** background: gray; */
+}
+
+
+#leftField, #rightField {
+    width: 45%;
+    margin: 5px;
+    padding: 5px;
+    /** background: white; */
+}
+
+#leftField  {
+    float:left;
+}
+
+#rightField {
+    float:right;
+}
+
+/** #playerField {
+    margin-left: 0px;
+    position: relative;
+}
+
+#computerField {
+    margin-right: 0px;
+    position: relative;
+} */
+
+table {
+    border-collapse: separate;
+}
+
+th, td {
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    border: 1px solid rgb(126, 122, 122);
+    border-radius: 3px;
+    /** transition: all 0.3s ease; */
+}
+
+th:not(.hiddenBorder):not(.injured):not(.killed):not(.killedAuto):not(.missed):not(.missedAuto):not(.alive):hover {
+    background-color: rgb(18, 124, 223);
+    /** transition: all 0.3s ease; */
+}
+
+.hiddenBorder {
+    border: 0px;
+}
+
+
+/** .empty {
+    border: 3px solid rgba(18, 17, 36, 0.8);
+} */
+
+.ship {
+    border: 1px dashed black;
+}
+
+.injured {
+    background-color: rgb(243, 35, 28);
+}
+
+.killed {
+    background-color: rgb(158, 4, 4);
+}
+
+.killedAuto {
+    background-color: rgb(211, 4, 149);
+}
+
+/** .missed {
+    background-color: rgb(146, 10, 62);
+} */
+
+.missedAuto {
+    background-color: rgb(165, 177, 8);
+}
+
+.alive {
+    background-color: rgb(2, 170, 2);
+}
