@@ -1,7 +1,7 @@
 /**
   Contains basic properties of the core
   like player's data, computer's data,
-  checks has anyone won the core either
+  checks has anyone won the game either
   we have to continue the battle!
 */
 import { getRandomInt, sleep } from "./helpers";
@@ -458,7 +458,7 @@ const renderWinnerStatus = () => {
   }
 
   gameStatusTitle.innerHTML =
-    seaBattleGameInstance.winner + "'s won the core! &#128165;";
+    seaBattleGameInstance.winner + "'s won the game! &#128165;";
 };
 
 /**
