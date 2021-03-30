@@ -497,15 +497,8 @@ const assignComputerFieldClickHandlers = () => {
   for (let i = 0; i < 10; ++i) {
     for (let j = 0; j < 10; ++j) {
       const cellId = `computer_${i}_${j}`;
-      const cellItem = document.getElementById(cellId)!;
 
-      cellItem.addEventListener(
-        "click",
-        () => {
-          fireCell(cellId);
-        },
-        { once: true }
-      );
+      document.getElementById(cellId)!.onclick = () => fireCell(cellId);
     }
   }
 };
@@ -590,9 +583,9 @@ const drawCells = (onlyPlayer: boolean = false) => {
           computerCellType === EFieldCellType.Missed ||
           computerCellType === EFieldCellType.MissedAuto
         ) {
-          const cellId = "computer_" + i + "_" + j;
+          const cellId = `computer_${i}_${j}`;
 
-          document.getElementById(cellId)?.setAttribute("onclick", "");
+          document.getElementById(cellId)!.onclick = null;
         }
       }
     }
