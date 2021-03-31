@@ -330,6 +330,8 @@ export const fireCell = (cellId: string) => {
         i: coordinateI,
         j: coordinateJ,
       }) || EFieldCellType.Empty;
+
+    document.getElementById(cellId)!.onclick = null;
   }
 
   isEnd = seaBattleGameInstance.checkEnd();
