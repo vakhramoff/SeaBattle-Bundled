@@ -111,7 +111,7 @@ const showInputNameScreen = () => {
   nameField.id = "userName";
   nameField.className = "inputField";
   nameField.className += " centeredText";
-  nameField.value = "Vladimir Putin";
+  nameField.value = "Joe Biden";
   nameField.setAttribute("maxlength", "20");
   nameField.setAttribute("placeholder", "Your name");
 
